@@ -1,0 +1,16 @@
+{
+    "imagefolder_path": "",
+    "experiment": "",
+    "experiments": [
+        {
+            "NUM_EPOCHS": 20, 
+            "BATCH_SIZE": 32,
+            "LAYERS_TRAINED": "all",
+            "LEARNING_RATE": 0.001,
+            "MOMENTUM": 0.9,
+            "RANDOM_SEED": 15,
+            "TAG": "Best model rerun for .pt file",
+            "BASE_MODEL": "alexnet"
+        }
+    ]
+}
