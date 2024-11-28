@@ -1,26 +1,38 @@
-README
+# Fine-tuned Optical Character Recognition For Dental Fossil Markings
 
-you need python (v 3.12>) & pip
+Experiment files and pretrained models from the Data Science MSc thesis 'Fine-tuned Optical Character Recognition For Dental Fossil Markings.
 
-tee imagefolder
-imagefolder needs to have train and val directories
-laita experiments.jsoniin task (imagefolderin alla olevan dirin nimi)
-laita experiments.jsoniin missä sun imagefolder sijaitsee
-testaa eri juttuja
+## Run experiments on your own data
 
-Create a virtual environment:
+Requirements:
+
+- Python v. 3.12>, pip
+- Images to classify in a data directory in [TorchVision ImageFolder format](https://pytorch.org/vision/stable/generated/torchvision.datasets.ImageFolder.html?highlight=imagefolder#torchvision.datasets.ImageFolder). Program expects you to have in your data directory a classification task named folder, eg 'upper/lower' and under that directories 'train' and 'val', inside which examples: 'train/upper/1.png, train/upper/2.png, train/lower/3.png ...' for both training and validation data.
+
+1. Insert to desired .json file the name of the classification task and the absolute path to your data directory (one level above classification task directory).
+
+2. Create a virtual environment:
+```
 python -m venv venv
+``` 
 
-Install requirements
+3. Install requirements
+```
 pip install -r requirements.txt
-
+```
 (Installation will take a while)
 
-Run experiments
-python experiment.py <config json filename, defaults to experiments.json>
+4. Run your experiments
+```
+python experiment.py [configfile].json
+```
 
+5. Inspect experiment results in MLflow tracking server
+
+```
 chmod u+x run_tracking_server.sh
 ./run_tracking_server.sh
+```
 
-navigate to http:localhost:8080. You see your experiments in the UI and pretrained models are downloadable
-on each run's artifacts: click on the run and then artifacts.
+Navigate to [MLflow local UI](http:localhost:8080). You see your experiments in the UI and pretrained models are downloadable
+on each run's artifacts by selecting the experiment, clicking on a run and scrolling down to 'artifacts'.
