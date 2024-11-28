@@ -7,7 +7,7 @@ Experiment files and pretrained models from the Data Science MSc thesis 'Fine-tu
 Requirements:
 
 - Python v. 3.12>, pip
-- Images to classify in a data directory in [TorchVision ImageFolder format](https://pytorch.org/vision/stable/generated/torchvision.datasets.ImageFolder.html?highlight=imagefolder#torchvision.datasets.ImageFolder). Program expects you to have in your data directory a classification task named folder, eg 'upper/lower' and under that directories 'train' and 'val', inside which examples: 'train/upper/1.png, train/upper/2.png, train/lower/3.png ...' for both training and validation data.
+- Images to classify in a data directory in [TorchVision ImageFolder format](https://pytorch.org/vision/stable/generated/torchvision.datasets.ImageFolder.html?highlight=imagefolder#torchvision.datasets.ImageFolder). Program expects you to have in your data directory a classification task named folder, eg 'upper/lower' and under that directories 'train' and 'val', inside which examples: 'train/upper/1.png, train/upper/2.png, train/lower/3.png ...' for both training and validation data. Target class count is automatically detected from the number of class directories; they should equal in name and amount in train and validation directories.
 
 1. Insert to desired .json file the name of the classification task and the absolute path to your data directory (one level above classification task directory).
 
