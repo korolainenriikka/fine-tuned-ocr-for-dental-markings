@@ -1,6 +1,6 @@
 # Fine-tuned Optical Character Recognition For Dental Fossil Markings
 
-Experiment files and pretrained models from the Data Science MSc thesis 'Fine-tuned Optical Character Recognition For Dental Fossil Markings.
+Experiment files and pretrained models from the Data Science MSc thesis 'Fine-tuned Optical Character Recognition For Dental Fossil Markings'.
 
 ## Run experiments on your own data
 
