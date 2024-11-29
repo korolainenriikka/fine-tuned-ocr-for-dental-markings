@@ -4,7 +4,7 @@ Experiment files and pretrained models from the Data Science MSc thesis 'Fine-tu
 
 ## Usage of the pretrained models
 
-TODO: add demos on inference pipeline
+See demo notebook in `pretrained_models/demo.ipynb` 
 
 ## Run experiments on your own data
 
