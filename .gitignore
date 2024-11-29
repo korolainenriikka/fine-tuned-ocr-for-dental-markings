@@ -1,3 +1,4 @@
-*.pt
 *.db
 **/venv
+experiments/*.pt
+**/mlruns

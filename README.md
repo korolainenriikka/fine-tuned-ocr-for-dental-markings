@@ -2,6 +2,10 @@
 
 Experiment files and pretrained models from the Data Science MSc thesis 'Fine-tuned Optical Character Recognition For Dental Fossil Markings'.
 
+## Usage of the pretrained models
+
+TODO: add demos on inference pipeline
+
 ## Run experiments on your own data
 
 Requirements:
